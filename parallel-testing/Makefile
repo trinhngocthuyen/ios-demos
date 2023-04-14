@@ -1,2 +1,5 @@
+build:
+	sh scripts/xcb.sh build
+
 test:
-	sh scripts/test.sh
+	sh scripts/xcb.sh test
