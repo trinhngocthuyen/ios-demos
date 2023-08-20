@@ -15,7 +15,6 @@
 		F5C2A2BD29E296DC008216FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C2A2BB29E296DC008216FC /* LaunchScreen.storyboard */; };
 		F5C2A2D229E296DC008216FC /* EXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2A2D129E296DC008216FC /* EXUITests.swift */; };
 		F5C2A2E229E29763008216FC /* AutoloadSwizzlings.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C2A2E129E29763008216FC /* AutoloadSwizzlings.m */; };
-		F5C2A2E429E29787008216FC /* XCTestSuite+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2A2E329E29787008216FC /* XCTestSuite+Swizzle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +40,6 @@
 		F5C2A2D129E296DC008216FC /* EXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXUITests.swift; sourceTree = "<group>"; };
 		F5C2A2E029E29763008216FC /* EXUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F5C2A2E129E29763008216FC /* AutoloadSwizzlings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoloadSwizzlings.m; sourceTree = "<group>"; };
-		F5C2A2E329E29787008216FC /* XCTestSuite+Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestSuite+Swizzle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +98,6 @@
 				F5C2A2D129E296DC008216FC /* EXUITests.swift */,
 				F5C2A2E129E29763008216FC /* AutoloadSwizzlings.m */,
 				F5C2A2E029E29763008216FC /* EXUITests-Bridging-Header.h */,
-				F5C2A2E329E29787008216FC /* XCTestSuite+Swizzle.swift */,
 			);
 			path = EXUITests;
 			sourceTree = "<group>";
@@ -218,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C2A2E229E29763008216FC /* AutoloadSwizzlings.m in Sources */,
-				F5C2A2E429E29787008216FC /* XCTestSuite+Swizzle.swift in Sources */,
 				F5C2A2D229E296DC008216FC /* EXUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
