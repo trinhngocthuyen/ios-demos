@@ -6,6 +6,9 @@ Ref: https://engineering.grab.com/tackling-ui-test-execution-time-imbalance-for-
 
 -> Resolved!
 
+-> Updated code: https://github.com/trinhngocthuyen/ios-demos/blob/main/parallel-testing/EXUITests/AutoloadSwizzlings.m#L8-L46
+
+
 To run the demo
 ```sh
 make demo
