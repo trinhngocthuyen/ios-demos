@@ -7,34 +7,54 @@
 
 import XCTest
 
+func swizzle(cls: AnyClass, _ selector1: Selector, _ selector2: Selector, instanceMethod: Bool = true) {
+  let fn = instanceMethod ? class_getInstanceMethod : class_getClassMethod
+  guard let m1 = fn(cls, selector1), let m2 = fn(cls, selector2) else {
+    fatalError("Cannot swizzle: \(selector1) <-> \(selector2)")
+  }
+  NSLog("Swizzle: \(selector1) <-> \(selector2)")
+  method_exchangeImplementations(m1, m2)
+}
+
+class QuickSuite: XCTestSuite { }
+
 
 extension XCTestSuite {
-  /// For 'Selected tests' suite
   @objc dynamic func swizzled_init(name masked: String) -> XCTestSuite {
-    /// Recover the original test name
-    /// - masked: UITestCaseA_testA1/testA1              --> recovered: UITestCaseA/testA1
-    /// - masked: Driver/UITestCaseA_testA1/testA1   --> recovered: Driver/UITestCaseA/testA1
     guard let testBaseName = masked.split(separator: "/").last else {
       return swizzled_init(name: masked)
     }
-    let recoveredName = masked.replacingOccurrences(of: "_\(testBaseName)/", with: "/") // 👈 remove the token
-    NSLog("-> Detokenize test: \(masked) -> \(recoveredName)")
-    return swizzled_init(name: recoveredName) // 👈 call the original init
+    let recoveredName = masked.replacingOccurrences(of: "_\(testBaseName)/", with: "/")
+    NSLog("-> \(#function). test: \(masked) -> \(recoveredName)")
+    return swizzled_init(name: recoveredName)
   }
-
-  @objc class func loadSwizzlings() {
-    func swizzle(_ selector1: Selector, _ selector2: Selector, instanceMethod: Bool = true) {
-      let fn = instanceMethod ? class_getInstanceMethod : class_getClassMethod
-      guard let m1 = fn(XCTestSuite.self, selector1), let m2 = fn(XCTestSuite.self, selector2) else {
-        fatalError("Cannot swizzle: \(selector1) <-> \(selector2)")
-      }
-      NSLog("Swizzle: \(selector1) <-> \(selector2)")
-      method_exchangeImplementations(m1, m2)
+  
+  /// ---------------------------------------------------------
+  
+  @objc dynamic class func swizzled_init(forTestCaseWithName masked: String) -> XCTestSuite {
+    guard let testBaseName = masked.split(separator: "/").last else {
+      return swizzled_init(forTestCaseWithName: masked)
     }
+    let recoveredName = masked.replacingOccurrences(of: "_\(testBaseName)/", with: "/")
+    NSLog("-> \(#function). test: \(masked) -> \(recoveredName)")
+    return swizzled_init(forTestCaseWithName: recoveredName)
+  }
+  
+  /// ---------------------------------------------------------
+  
+  @objc class func loadSwizzlings() {
+//    swizzle(
+//      cls: XCTestSuite.self,
+//      #selector(XCTestSuite.init(name:)),
+//      #selector(XCTestSuite.swizzled_init(name:))
+//    )
+//    swizzle(
+//      cls: XCTestSuite.self,
+//      #selector(XCTestSuite.init(forTestCaseWithName:)),
+//      #selector(XCTestSuite.swizzled_init(forTestCaseWithName:)),
+//      instanceMethod: false
+//    )
 
-    swizzle(
-      #selector(XCTestSuite.init(name:)),
-      #selector(XCTestSuite.swizzled_init(name:))
-    )
+    
   }
 }

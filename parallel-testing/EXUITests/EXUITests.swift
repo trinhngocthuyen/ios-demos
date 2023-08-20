@@ -7,22 +7,26 @@
 
 import XCTest
 
-class BaseUITest: XCTestCase { }
-
-final class TestCaseA: BaseUITest {
-  func testA1() { }
-  func testA2() { }
-  func testA3() { }
+class BaseTestCase: XCTestCase {
+  func waitABit() {
+    sleep(UInt32.random(in: 1..<10))
+  }
 }
 
-final class TestCaseB: BaseUITest {
-  func testB1() { }
-  func testB2() { }
-  func testB3() { }
+final class TestCaseA: BaseTestCase {
+  func testA1() { waitABit() }
+  func testA2() { waitABit() }
+  func testA3() { waitABit() }
 }
 
-final class TestCaseC: BaseUITest {
-  func testC1() { }
-  func testC2() { }
-  func testC3() { }
+final class TestCaseB: BaseTestCase {
+  func testB1() { waitABit() }
+  func testB2() { waitABit() }
+  func testB3() { waitABit() }
+}
+
+final class TestCaseC: BaseTestCase {
+  func testC1() { waitABit() }
+  func testC2() { waitABit() }
+  func testC3() { waitABit() }
 }
