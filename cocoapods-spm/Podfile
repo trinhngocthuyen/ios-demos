@@ -1,0 +1,9 @@
+eval File.read("../Podfile.shared.rb")
+
+plugin "cocoapods-spm"
+
+target "EX" do
+  pod "Services", :path => "LocalPods/Services"
+end
+
+configure_post_install

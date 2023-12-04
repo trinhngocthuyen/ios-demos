@@ -1,0 +1,16 @@
+PODS:
+  - Services (0.0.1)
+
+DEPENDENCIES:
+  - Services (from `LocalPods/Services`)
+
+EXTERNAL SOURCES:
+  Services:
+    :path: LocalPods/Services
+
+SPEC CHECKSUMS:
+  Services: 9a1ce7fe48999a8de1feca0b8efaa2d3f8aefabe
+
+PODFILE CHECKSUM: 61bcb1c3f3dd243147287a75b5503a7f01bad6da
+
+COCOAPODS: 1.14.3
