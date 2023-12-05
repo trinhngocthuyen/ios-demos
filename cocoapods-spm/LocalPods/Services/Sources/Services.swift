@@ -1,6 +1,6 @@
 import Orcam
 
 @Singleton
-final class Services {
+public final class Services {
 
 }
