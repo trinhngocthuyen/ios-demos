@@ -60,3 +60,4 @@ Pods/
 
 .vscode/
 tmp/
+.spm.pods/
