@@ -1,15 +1,20 @@
 PODS:
+  - CommonUI (0.0.1):
+    - Orcam
   - MacroCodableKit (0.0.1)
   - Orcam (0.0.1)
   - Services (0.0.1):
     - Orcam
 
 DEPENDENCIES:
+  - CommonUI (from `LocalPods/CommonUI`)
   - MacroCodableKit (from `.spm.pods/MacroCodableKit`)
   - Orcam (from `.spm.pods/Orcam`)
   - Services (from `LocalPods/Services`)
 
 EXTERNAL SOURCES:
+  CommonUI:
+    :path: LocalPods/CommonUI
   MacroCodableKit:
     :path: !ruby/object:Pathname
     path: ".spm.pods/MacroCodableKit"
@@ -20,10 +25,11 @@ EXTERNAL SOURCES:
     :path: LocalPods/Services
 
 SPEC CHECKSUMS:
+  CommonUI: 164686369017fdb5c07cfadb64929e30f135cfac
   MacroCodableKit: 29a3a48508c673918521ef5db6f1485db2ca75d0
   Orcam: 288b7e3fc07e33706ceab2f226e4177e99847143
   Services: 44d1ab55d8f38d68060f406d3d45348ce9df7aaa
 
-PODFILE CHECKSUM: 1b38d71d252685c8dbb53115c9fedb29885d698d
+PODFILE CHECKSUM: e9a4c3b80aa406543d32d7bfcb4e49a974087dd4
 
 COCOAPODS: 1.14.3

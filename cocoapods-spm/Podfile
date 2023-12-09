@@ -7,7 +7,10 @@ config_cocoapods_spm(
   default_macro_config: "debug",
 )
 
+spm_pkg "SwiftUIX", :url => "https://github.com/SwiftUIX/SwiftUIX.git", :version => "0.1.9"
+
 target "EX" do
+  pod "CommonUI", :path => "LocalPods/CommonUI"
   pod "Services", :path => "LocalPods/Services"
   pod "Orcam", :macro => {
     :git => "https://github.com/trinhngocthuyen/orcam.git",
