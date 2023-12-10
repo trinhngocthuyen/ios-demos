@@ -1,5 +1,6 @@
 import Orcam
 import MacroCodableKit
+import SwiftyBeaver
 
 @Init
 struct Foo_Orcam {
