@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		42F4BB64AE40494E13E5F852 /* Pods_EX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1B48FBE5DFDD728F200CB3 /* Pods_EX.framework */; };
+		F522B5652B280C89009730B4 /* SPMPackagePlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F522B5642B280C89009730B4 /* SPMPackagePlayground.swift */; };
 		F5A631132B1D912000A958CB /* EXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A631122B1D912000A958CB /* EXApp.swift */; };
 		F5A631152B1D912000A958CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A631142B1D912000A958CB /* ContentView.swift */; };
 		F5A631172B1D912200A958CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A631162B1D912200A958CB /* Assets.xcassets */; };
 		F5A6311A2B1D912200A958CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A631192B1D912200A958CB /* Preview Assets.xcassets */; };
 		F5A631242B1D974400A958CB /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A631232B1D974400A958CB /* HomeVM.swift */; };
 		F5A631262B1D976E00A958CB /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A631252B1D976E00A958CB /* HomeScreen.swift */; };
-		F5D9B9142B22CBC500957519 /* MacrosPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D9B9132B22CBC500957519 /* MacrosPlayground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		194A11CBD3F90CAD0A00700B /* Pods-EX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EX.debug.xcconfig"; path = "Target Support Files/Pods-EX/Pods-EX.debug.xcconfig"; sourceTree = "<group>"; };
 		5B1B48FBE5DFDD728F200CB3 /* Pods_EX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9FF68667E404D1C27C0EAF /* Pods-EX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EX.release.xcconfig"; path = "Target Support Files/Pods-EX/Pods-EX.release.xcconfig"; sourceTree = "<group>"; };
+		F522B5642B280C89009730B4 /* SPMPackagePlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPMPackagePlayground.swift; sourceTree = "<group>"; };
 		F5A6310F2B1D912000A958CB /* EX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A631122B1D912000A958CB /* EXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXApp.swift; sourceTree = "<group>"; };
 		F5A631142B1D912000A958CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		F5A631192B1D912200A958CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5A631232B1D974400A958CB /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		F5A631252B1D976E00A958CB /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		F5D9B9132B22CBC500957519 /* MacrosPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacrosPlayground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +81,13 @@
 		F5A631112B1D912000A958CB /* EX */ = {
 			isa = PBXGroup;
 			children = (
+				F522B5642B280C89009730B4 /* SPMPackagePlayground.swift */,
 				F5A631122B1D912000A958CB /* EXApp.swift */,
 				F5A631142B1D912000A958CB /* ContentView.swift */,
 				F5A631162B1D912200A958CB /* Assets.xcassets */,
 				F5A631182B1D912200A958CB /* Preview Content */,
 				F5A631232B1D974400A958CB /* HomeVM.swift */,
 				F5A631252B1D976E00A958CB /* HomeScreen.swift */,
-				F5D9B9132B22CBC500957519 /* MacrosPlayground.swift */,
 			);
 			path = EX;
 			sourceTree = "<group>";
@@ -217,8 +217,8 @@
 				F5A631152B1D912000A958CB /* ContentView.swift in Sources */,
 				F5A631132B1D912000A958CB /* EXApp.swift in Sources */,
 				F5A631262B1D976E00A958CB /* HomeScreen.swift in Sources */,
+				F522B5652B280C89009730B4 /* SPMPackagePlayground.swift in Sources */,
 				F5A631242B1D974400A958CB /* HomeVM.swift in Sources */,
-				F5D9B9142B22CBC500957519 /* MacrosPlayground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
