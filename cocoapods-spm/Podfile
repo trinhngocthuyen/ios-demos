@@ -16,6 +16,7 @@ spm_pkg "SwiftyBeaver",
         :products => ["SwiftyBeaver"]
 
 target "EX" do
+  pod "Logger", :path => "LocalPods/Logger"
   pod "CommonUI", :path => "LocalPods/CommonUI"
   pod "Services", :path => "LocalPods/Services"
   pod "Orcam", :macro => {
