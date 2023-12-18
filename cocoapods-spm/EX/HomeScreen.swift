@@ -13,7 +13,7 @@ struct HomeScreen: View {
   var body: some View {
     NavigationStack {
       VStack {
-        ContentUnavailableView(label: { Text("No content yet") })
+        Text("No content yet")
       }
       .navigationTitle("Home")
     }
