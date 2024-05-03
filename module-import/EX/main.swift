@@ -5,7 +5,7 @@ import DebugKit
 
 print("Hello, World!")
 
-sayHi()
-diagnose()
-print(Logger_Foo.self)
-print(CommonUI_Foo.self)
+sayHi() // from: Greeter
+diagnose() // from: DebugKit
+print(Logger_Foo.self) // from: Logger
+print(CommonUI_Foo.self) // from: CommonUI
