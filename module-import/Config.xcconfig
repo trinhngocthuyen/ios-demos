@@ -1,0 +1,9 @@
+MODULES_BUILD_DIR = $(SRCROOT)/modules/build
+// ---------------------------------------------------
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(MODULES_BUILD_DIR)/CommonUI
+LIBRARY_SEARCH_PATHS = $(inherited) $(MODULES_BUILD_DIR)/DebugKit $(MODULES_BUILD_DIR)/Greeter $(MODULES_BUILD_DIR)/Logger
+SWIFT_INCLUDE_PATHS = $(inherited) $(MODULES_BUILD_DIR)/Logger
+
+OTHER_SWIFT_FLAGS = $(inherited) -Xcc -fmodule-map-file=$(MODULES_BUILD_DIR)/DebugKit/module.modulemap -Xcc -fmodule-file=$(MODULES_BUILD_DIR)/Greeter/Greeter.pcm
+OTHER_LDFLAGS = $(inherited) -framework "CommonUI" -l"DebugKit.o" -l"Greeter.o" -l"Logger"

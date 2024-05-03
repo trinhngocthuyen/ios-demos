@@ -1,0 +1,3 @@
+module Greeter {
+  header "Greeter.h"
+}
