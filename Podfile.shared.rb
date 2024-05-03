@@ -11,3 +11,5 @@ def configure_post_install
 	  yield installer if block_given?
 	end
 end
+
+@checksum = "dummy-checksum-to-prevent-merge-conflicts"
