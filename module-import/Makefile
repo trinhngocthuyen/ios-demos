@@ -13,4 +13,4 @@ modules.build:
 	cd modules && make all
 
 build: modules.build
-	xcodebuild -scheme EX | $(FORMATTER)
+	set -o pipefail && xcodebuild -scheme EX | $(FORMATTER)
