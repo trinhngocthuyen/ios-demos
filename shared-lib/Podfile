@@ -1,0 +1,20 @@
+platform :ios, "16.0"
+use_frameworks! :linkage => :static
+
+@checksum = "dummy-checksum-to-prevent-merge-conflicts"
+
+target "EX" do
+  pod "Logger", :path => "LocalPods/Logger"
+end
+
+target "EXTests" do
+  pod "TestKit", :path => "LocalPods/TestKit"
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings.delete "IPHONEOS_DEPLOYMENT_TARGET"
+    end
+  end
+end

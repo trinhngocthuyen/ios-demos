@@ -1,0 +1,22 @@
+PODS:
+  - Logger (0.0.1)
+  - TestKit (0.0.1):
+    - Logger
+
+DEPENDENCIES:
+  - Logger (from `LocalPods/Logger`)
+  - TestKit (from `LocalPods/TestKit`)
+
+EXTERNAL SOURCES:
+  Logger:
+    :path: LocalPods/Logger
+  TestKit:
+    :path: LocalPods/TestKit
+
+SPEC CHECKSUMS:
+  Logger: b4261b29e1bd29c9101466e3627f2234260cc623
+  TestKit: cae1af8ff9821151899047ba33113735c47a3013
+
+PODFILE CHECKSUM: dummy-checksum-to-prevent-merge-conflicts
+
+COCOAPODS: 1.15.2
