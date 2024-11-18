@@ -1,4 +1,4 @@
-# Demo for cocoapods-spm/112
+# Demo for [cocoapods-spm/112](https://github.com/trinhngocthuyen/cocoapods-spm/issues/112)
 
 Duplicate class in EX and EXTests
 
