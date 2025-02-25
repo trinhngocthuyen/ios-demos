@@ -1,0 +1,10 @@
+eval File.read(File.join(__dir__, "..", "Podfile.shared.rb"))
+
+target "EX" do
+end
+
+target "EXTests" do
+  pod "SwiftTestingSupport", :path => "LocalPods/SwiftTestingSupport"
+end
+
+configure_post_install

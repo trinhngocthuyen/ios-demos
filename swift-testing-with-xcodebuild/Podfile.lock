@@ -1,0 +1,16 @@
+PODS:
+  - SwiftTestingSupport (0.0.1)
+
+DEPENDENCIES:
+  - SwiftTestingSupport (from `LocalPods/SwiftTestingSupport`)
+
+EXTERNAL SOURCES:
+  SwiftTestingSupport:
+    :path: LocalPods/SwiftTestingSupport
+
+SPEC CHECKSUMS:
+  SwiftTestingSupport: 544b54f6d0314c0685a8840036f8343b2b9435a8
+
+PODFILE CHECKSUM: dummy-checksum-to-prevent-merge-conflicts
+
+COCOAPODS: 1.16.2
